@@ -2,12 +2,15 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.css'
 
-import Login from '../../components/login/index'
+import Banner from "../../components/banner/index"
+import Timeline from "../../components/timeline/index"
 
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: 'UW 小帮手',
+    navigationBarBackgroundColor: '#4b2e83',
+    navigationBarTextStyle: 'white'
   }
 
   componentWillMount () { }
@@ -23,7 +26,8 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Login/>
+        <Banner />
+        <Timeline />
       </View>
     )
   }
