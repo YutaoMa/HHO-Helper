@@ -1,0 +1,16 @@
+# Git
+package-lock.json
+
+# Node.js
+node_modules/
+
+# Build
+dist/
+deploy_versions/
+
+# Temp
+.temp/
+.rn_temp/
+
+# macOS
+.DS_Store

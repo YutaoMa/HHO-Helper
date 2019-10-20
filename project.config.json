@@ -1,0 +1,14 @@
+{
+  "miniprogramRoot": "client/dist/",
+  "cloudfunctionRoot": "cloud/functions/",
+  "projectname": "hho-helper",
+  "description": "A UW HHO App",
+  "appid": "wxcb06327ceb69f2d4",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
