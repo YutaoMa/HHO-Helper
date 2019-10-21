@@ -3,12 +3,16 @@ import { View } from "@tarojs/components"
 import { ClSwiper } from "mp-colorui"
 import event1Image from "../../images/event-1.jpg"
 import event2Image from "../../images/event-2.jpg"
+import event3Image from "../../images/event-3.jpg"
 
 const imgList = [{
     url: event1Image,
     type: "image"
 }, {
     url: event2Image,
+    type: "image"
+}, {
+    url: event3Image,
     type: "image"
 }]
 

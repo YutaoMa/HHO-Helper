@@ -28,7 +28,13 @@ const evtList = [{
 
 export default function Timeline() {
     return (
-        <View>
+        <View
+            onClick={() => {
+                Taro.navigateTo({
+                    url: "../../pages/signup/index"
+                })
+            }}
+        >
             <ClTitleBar
                 title="近期活动"
                 bgColor="gradualPurple"

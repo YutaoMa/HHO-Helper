@@ -1,6 +1,7 @@
 import Taro, { Component } from "@tarojs/taro"
 import { View } from "@tarojs/components"
-import { ClForm, ClFormItem, ClInput, ClRadio, ClCheckbox } from "mp-colorui"
+import { ClTitleBar, ClForm, ClFormItem, ClInput, ClRadio, ClCheckbox, ClButton } from "mp-colorui"
+import "./index.scss"
 
 const classGroup = [{
     key: "大一",
@@ -32,7 +33,15 @@ export default class Signup extends Component {
     render() {
         return (
             <View>
-                <ClForm>
+                <ClTitleBar
+                    title="报名表"
+                    bgColor="gradualPurple"
+                    textColor="white"
+                    borderColor="white"
+                />
+                <ClForm
+                    className="form"
+                >
                     <ClFormItem>
                         <ClInput
                             title="姓名"
@@ -43,6 +52,7 @@ export default class Signup extends Component {
                         <ClRadio
                             title="年级"
                             radioGroup={classGroup}
+                            type="form"
                         />
                     </ClFormItem>
                     <ClFormItem>
@@ -51,6 +61,18 @@ export default class Signup extends Component {
                             type="form"
                             checkboxGroup={majorGroup}
                         />                   
+                    </ClFormItem>
+                    <ClFormItem>
+                        <ClButton
+                            className="button"
+                            shape="round"
+                            long
+                            onClick={() => {
+                                Taro.navigateTo({
+                                    url: "../confirm/index"
+                                })
+                            }}
+                        >提交报名信息</ClButton>
                     </ClFormItem>
                 </ClForm>
             </View>

@@ -14,8 +14,24 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
-      'pages/signup/index'
+      'pages/signup/index',
+      'pages/confirm/index',
+      'pages/me/index'
     ],
+    tabBar: {
+      selectedColor: "#4b2e83",
+      list: [{
+        text: "活动",
+        pagePath: "pages/index/index",
+        iconPath: "images/index.png",
+        selectedIconPath: "images/index-active.png"
+      }, {
+        text: "我",
+        pagePath: "pages/me/index",
+        iconPath: "images/me.png",
+        selectedIconPath: "images/me-active.png"
+      }]
+    },
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#4b2e83',
