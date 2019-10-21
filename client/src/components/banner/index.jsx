@@ -1,8 +1,8 @@
 import Taro from "@tarojs/taro"
 import { View } from "@tarojs/components"
 import { ClSwiper } from "mp-colorui"
-import event1Image from "../../images/event-1.png"
-import event2Image from "../../images/event-2.png"
+import event1Image from "../../images/event-1.jpg"
+import event2Image from "../../images/event-2.jpg"
 
 const imgList = [{
     url: event1Image,

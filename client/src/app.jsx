@@ -13,13 +13,14 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/signup/index'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#4b2e83',
+      navigationBarTitleText: 'UW 小帮手',
+      navigationBarTextStyle: 'white'
     },
     cloud: true
   }
